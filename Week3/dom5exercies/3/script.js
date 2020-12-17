@@ -16,5 +16,9 @@ bodyEl.insertBefore(wordsCountEl, paragraph);
 // uygulama
 // tahmini okuma suresini dakika cinsinden yazdiralim.
 
-
+const timeLeft = wordsCount/100
+var parsingTime = parseInt(timeLeft)
+const timeLeftWrite = document.createElement("span");
+timeLeftWrite.innerHTML = "Time left in this Text: "+parsingTime +" minutes";
+bodyEl.appendChild(timeLeftWrite)
 
